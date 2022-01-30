@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Chowder&#39;s note</title>
-    <link>https://a199348006.github.io/my-blog/</link>
-    <description>Recent content on Chowder&#39;s note</description>
+    <title>github on Chowder&#39;s note</title>
+    <link>https://a199348006.github.io/my-blog/tags/github/</link>
+    <description>Recent content in github on Chowder&#39;s note</description>
     <image>
       <url>https://a199348006.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://a199348006.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 30 Jan 2022 11:49:15 +0800</lastBuildDate><atom:link href="https://a199348006.github.io/my-blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jan 2022 11:49:15 +0800</lastBuildDate><atom:link href="https://a199348006.github.io/my-blog/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Hugo部署至GitHub</title>
       <link>https://a199348006.github.io/my-blog/2022/01/hugo/</link>
@@ -18,17 +18,6 @@
       <guid>https://a199348006.github.io/my-blog/2022/01/hugo/</guid>
       <description>使用Hugo套用主題部署至GitHub Pages，以及自動化部署GitHub Actions</description>
     </item>
-    
-    <item>
-      <title>XAMPP常用設定</title>
-      <link>https://a199348006.github.io/my-blog/2022/01/xampp-setting/</link>
-      <pubDate>Thu, 27 Jan 2022 10:17:46 +0800</pubDate>
-      
-      <guid>https://a199348006.github.io/my-blog/2022/01/xampp-setting/</guid>
-      <description>XAMPP config setting after install XAMPP</description>
-    </item>
-    
-    
     
   </channel>
 </rss>
