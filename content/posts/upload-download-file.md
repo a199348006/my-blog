@@ -1,8 +1,8 @@
 ---
 title: "使用Express架設檔案上傳/下載API"
 date: 2022-02-09T15:40:07+08:00
-draft: true
-tags: ["javascript", "express", "multer"]
+draft: false
+tags: ["javascript", "express", "multer", "axios"]
 categories: ["undefined"]
 description: "檔案上傳使用multer，下載使用res.download() in Express"
 hideSummary: false # To Hide summary being shown in list pages
@@ -10,9 +10,9 @@ hideSummary: false # To Hide summary being shown in list pages
 
 ## 前言
 
-> 網路上已有了許多教學及流程可以參考，在實作過程中還算順利，所以這邊就只附上我個人的[參考文獻](#參考來源)，並提出些碰到的狀況。
+> 透過[參考文獻](#參考來源)實作過後紀錄一下概要。
 
-套件版本
+套件版本：
 
 - express: ^4.17.1
 - multer: ^1.4.4
@@ -21,7 +21,9 @@ hideSummary: false # To Hide summary being shown in list pages
 
 ### Upload File
 
-#### Upload-server
+#### Upload-server-side
+
+> 其他multer中的options選項可以參考[Multer的GitHub][Multer GitHub]官方說明。
 
 util/middleware.js
 
@@ -31,7 +33,8 @@ const multer = require('multer')
 const storage = multer.diskStorage({
   destination: 'D:/upload-files',
   filename: function (req, file, callback) {
-    callback(null, file.originalname)
+    // 取得上傳的檔案名稱及副檔名作為存入destination的檔名
+    callback(null, file.originalname)  
   }
 })
 const upload = multer({ storage: storage }).single('file')
@@ -63,7 +66,7 @@ router.post('/upload', uploadFile, (req, res) => {
 })
 ```
 
-#### Upload-client
+#### Upload-client-side
 
 html
 
@@ -80,6 +83,7 @@ html
     $("#btn-post").click(function () {     
       let formData = new FormData()
       formData.append('title', 'This is title.')
+      // 與multer().single('file')對應
       formData.append('file', $("#myfile").prop("files")[0])
       
       axios({
@@ -93,6 +97,8 @@ html
 ```
 
 #### Upload-result
+
+> 將有/無檔案印出的結果差異紀錄。
 
 result with file
 
@@ -119,7 +125,7 @@ undefined
 
 ### Download File
 
-#### Download-server
+#### Download-server-side
 
 controller/downloadFile.js
 
@@ -144,7 +150,7 @@ const { downloadFile } = require('../controller/downloadFile')
 router.get('/downloadFile/:name', downloadFile)
 ```
 
-#### Download-client
+#### Download-client-side
 
 html
 
@@ -163,12 +169,20 @@ axios({
 });
 ```
 
-[How to download files using axios](https://stackoverflow.com/questions/41938718/how-to-download-files-using-axios/53230807)
+[How to download files using axios][How to download files using axios]
+
+> 另一種下載檔案的方法則是利用window.open，但瀏覽器會自動開啟關閉一個新分頁，就看是否能接受這樣的呈現方式。
+
+```javascript
+window.open(`http://localhost:port/downloadFile/${fileName}`)
+```
 
 ## 參考來源
-
-[Multer GitHub](https://github.com/expressjs/multer)
 
 [Multer example](https://www.twilio.com/blog/handle-file-uploads-node-express)
 
 [Express: res.download()](https://expressjs.com/zh-tw/api.html#res.download)
+
+[Multer GitHub]: https://github.com/expressjs/multer
+
+[How to download files using axios]: https://stackoverflow.com/questions/41938718/how-to-download-files-using-axios/53230807
