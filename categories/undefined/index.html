@@ -75,6 +75,21 @@
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>使用Express架設檔案上傳/下載API
+</h2>
+</header>
+<section class=entry-content>
+<p>前言 透過參考文獻實作過後紀錄一下概要。
+套件版本：
+express: ^4.17.1 multer: ^1.4.4 API Upload File Upload-server-side 其他multer中的options選項可以參考Multer的GitHub官方說明。
+util/middleware.js
+const multer = require('multer') const storage = multer.diskStorage({ destination: 'D:/upload-files', filename: function (req, file, callback) { // 取得上傳的檔案名稱及副檔名作為存入destination的檔名 callback(null, file.originalname) } }) const upload = multer({ storage: storage }).single('file') exports.uploadFile = (req, res, next) => { upload(req, res, function (err) { if(err instanceof multer.MulterError) { console.log('Multer error: ', err) res.status(400) } else if(err) { console....</p>
+</section>
+<footer class=entry-footer><span title="2022-02-09 15:40:07 +0800 +0800">February 9, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Chowder</footer>
+<a class=entry-link aria-label="post link to 使用Express架設檔案上傳/下載API" href=https://a199348006.github.io/my-blog/2022/02/upload-download-file/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>使用Hugo部署至GitHub
 </h2>
 </header>

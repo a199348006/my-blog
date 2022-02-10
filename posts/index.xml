@@ -9,7 +9,16 @@
       <link>https://a199348006.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 30 Jan 2022 11:49:15 +0800</lastBuildDate><atom:link href="https://a199348006.github.io/my-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Feb 2022 15:40:07 +0800</lastBuildDate><atom:link href="https://a199348006.github.io/my-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Express架設檔案上傳/下載API</title>
+      <link>https://a199348006.github.io/my-blog/2022/02/upload-download-file/</link>
+      <pubDate>Wed, 09 Feb 2022 15:40:07 +0800</pubDate>
+      
+      <guid>https://a199348006.github.io/my-blog/2022/02/upload-download-file/</guid>
+      <description>檔案上傳使用multer，下載使用res.download() in Express</description>
+    </item>
+    
     <item>
       <title>使用Hugo部署至GitHub</title>
       <link>https://a199348006.github.io/my-blog/2022/01/hugo/</link>
