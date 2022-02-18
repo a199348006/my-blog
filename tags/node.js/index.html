@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>javascript | Chowder's note</title>
+<title>Node.js | Chowder's note</title>
 <meta name=keywords content>
 <meta name=description content="Welcome to my note">
 <meta name=author content="Chowder">
-<link rel=canonical href=https://a199348006.github.io/my-blog/tags/javascript/>
+<link rel=canonical href=https://a199348006.github.io/my-blog/tags/node.js/>
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
@@ -20,18 +20,18 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.92.2">
-<link rel=alternate type=application/rss+xml href=https://a199348006.github.io/my-blog/tags/javascript/index.xml>
+<link rel=alternate type=application/rss+xml href=https://a199348006.github.io/my-blog/tags/node.js/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="javascript">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="Node.js">
 <meta property="og:description" content="Welcome to my note">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://a199348006.github.io/my-blog/tags/javascript/"><meta property="og:image" content="https://a199348006.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="Chowder's note">
+<meta property="og:url" content="https://a199348006.github.io/my-blog/tags/node.js/"><meta property="og:image" content="https://a199348006.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="Chowder's note">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://a199348006.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
-<meta name=twitter:title content="javascript">
+<meta name=twitter:title content="Node.js">
 <meta name=twitter:description content="Welcome to my note">
 </head>
 <body class=list id=top>
@@ -71,22 +71,26 @@
 </header>
 <main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://a199348006.github.io/my-blog/>Home</a>&nbsp;»&nbsp;<a href=https://a199348006.github.io/my-blog/tags/>Tags</a></div>
-<h1>javascript</h1>
+<h1>Node.js</h1>
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>使用Express架設檔案上傳/下載API
+<h2>MQTT and mqtt.js
 </h2>
 </header>
 <section class=entry-content>
-<p>前言 透過參考文獻實作過後紀錄一下概要。
+<p>前言 在這裡只記錄些實作過程中的摘要，若是想觀看圖文並茂的文章及教程可以至最下方的參考來源。
 套件版本：
-express: ^4.17.1 multer: ^1.4.4 API Upload File Upload-server-side 其他multer中的options選項可以參考Multer的GitHub官方說明。
-util/middleware.js
-const multer = require('multer') const storage = multer.diskStorage({ destination: 'D:/upload-files', filename: function (req, file, callback) { // 取得上傳的檔案名稱及副檔名作為存入destination的檔名 callback(null, file.originalname) } }) const upload = multer({ storage: storage }).single('file') exports.uploadFile = (req, res, next) => { upload(req, res, function (err) { if(err instanceof multer.MulterError) { console.log('Multer error: ', err) res.status(400) } else if(err) { console....</p>
+mosquitto: 2.0.14 MQTT Explorer: 0.4.0-beta mqtt.js: 4.3.5 MQTT簡介 MQTT的架構中分為以下三者：
+Publisher(發佈者)：發佈訊息的人 Broker(代理人)：負責接收來自Publisher的訊息並發訊息給Subscribe Subscriber(訂閱者)：接收訊息的人 MQTT訊息格式 Control Header及Remaining Length皆必須存在，已Publish Message來說Variable Header>會放入topic主題，Payload放入傳遞的訊息內容。
+Control Header Remaining Length Variable Header: topic Payload: message 網路品質(QoS) MQTT定義了0, 1和2三個層級的品質設定：
+0: 最多傳送一次(at most once) 1: 至少傳送一次(at leat once) 2: 確實傳送一次(exactly once) 詳細教程
+安裝Mosquitto Windows及相關設定 Mosquitto安裝 Mosquitto Download
+安裝過程中Service可以取消勾選(手動開啟BQTT Broker功能)
+Service: 手動開啟BQTT Broker功能 Service: 開機執行 防火牆也需要到進階設定->輸入規則->新增規則->將預設port: 1883開啟，輸出規則重複上述操作。...</p>
 </section>
-<footer class=entry-footer><span title="2022-02-09 15:40:07 +0800 +0800">February 9, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Chowder</footer>
-<a class=entry-link aria-label="post link to 使用Express架設檔案上傳/下載API" href=https://a199348006.github.io/my-blog/2022/02/upload-download-file/></a>
+<footer class=entry-footer><span title="2022-02-17 16:21:29 +0800 +0800">February 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Chowder</footer>
+<a class=entry-link aria-label="post link to MQTT and mqtt.js" href=https://a199348006.github.io/my-blog/2022/02/mqtt-nodejs/></a>
 </article>
 </main>
 <footer class=footer>
