@@ -2,8 +2,8 @@
 title: "資料結構簡介"
 date: 2022-03-16T13:44:14+08:00
 draft: false
-tags: ["undefined"]
-categories: ["undefined"]
+tags: ["Data structure"]
+categories: ["Undefined"]
 description: "Introduce the data structure."
 hideSummary: false # To Hide summary being shown in list pages
 ---

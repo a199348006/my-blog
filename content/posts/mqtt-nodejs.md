@@ -3,7 +3,7 @@ title: "MQTT and mqtt.js"
 date: 2022-02-17T16:21:29+08:00
 draft: false
 tags: ["MQTT", "Node.js"]
-categories: ["undefined"]
+categories: ["Undefined"]
 description: "MQTT介紹、MQTT Explorer軟體應用及mqtt.js小測試"
 hideSummary: false # To Hide summary being shown in list pages
 ---

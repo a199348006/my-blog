@@ -3,7 +3,7 @@ title: "XAMPP常用設定"
 date: 2022-01-27T10:17:46+08:00
 draft: false
 tags: ["XAMPP"]
-categories: ["undefined"]
+categories: ["Undefined"]
 description: "XAMPP config setting after install XAMPP"
 hideSummary: true # To Hide summary being shown in list pages
 ---

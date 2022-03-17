@@ -2,8 +2,8 @@
 title: "使用Hugo部署至GitHub"
 date: 2022-01-30T11:49:15+08:00
 draft: false
-tags: ["hugo", "github"]
-categories: ["undefined"]
+tags: ["Hugo", "Github"]
+categories: ["Undefined"]
 description: "使用Hugo套用主題部署至GitHub Pages，以及自動化部署GitHub Actions"
 hideSummary: false # To Hide summary being shown in list pages
 ---

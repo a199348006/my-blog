@@ -2,8 +2,8 @@
 title: "使用Express架設檔案上傳/下載API"
 date: 2022-02-09T15:40:07+08:00
 draft: false
-tags: ["javascript", "express", "multer", "axios"]
-categories: ["undefined"]
+tags: ["Javascript", "Express", "Multer", "Axios"]
+categories: ["Undefined"]
 description: "檔案上傳使用multer，下載使用res.download() in Express"
 hideSummary: false # To Hide summary being shown in list pages
 ---
