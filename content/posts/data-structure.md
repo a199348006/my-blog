@@ -20,8 +20,6 @@ hideSummary: false # To Hide summary being shown in list pages
 - 圖形結構(Graph)
 - 雜湊表(Hash table)
 - 堆積(Heap)
-- 排序
-- 搜尋
 
 ## 資料結構分類
 
