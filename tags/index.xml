@@ -9,13 +9,22 @@
       <link>https://a199348006.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Mar 2022 13:44:14 +0800</lastBuildDate><atom:link href="https://a199348006.github.io/my-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Mar 2022 09:59:14 +0800</lastBuildDate><atom:link href="https://a199348006.github.io/my-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>undefined</title>
-      <link>https://a199348006.github.io/my-blog/tags/undefined/</link>
+      <title>Javascript</title>
+      <link>https://a199348006.github.io/my-blog/tags/javascript/</link>
+      <pubDate>Fri, 18 Mar 2022 09:59:14 +0800</pubDate>
+      
+      <guid>https://a199348006.github.io/my-blog/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data structure</title>
+      <link>https://a199348006.github.io/my-blog/tags/data-structure/</link>
       <pubDate>Wed, 16 Mar 2022 13:44:14 +0800</pubDate>
       
-      <guid>https://a199348006.github.io/my-blog/tags/undefined/</guid>
+      <guid>https://a199348006.github.io/my-blog/tags/data-structure/</guid>
       <description></description>
     </item>
     
@@ -38,7 +47,7 @@
     </item>
     
     <item>
-      <title>axios</title>
+      <title>Axios</title>
       <link>https://a199348006.github.io/my-blog/tags/axios/</link>
       <pubDate>Wed, 09 Feb 2022 15:40:07 +0800</pubDate>
       
@@ -47,7 +56,7 @@
     </item>
     
     <item>
-      <title>express</title>
+      <title>Express</title>
       <link>https://a199348006.github.io/my-blog/tags/express/</link>
       <pubDate>Wed, 09 Feb 2022 15:40:07 +0800</pubDate>
       
@@ -56,16 +65,7 @@
     </item>
     
     <item>
-      <title>javascript</title>
-      <link>https://a199348006.github.io/my-blog/tags/javascript/</link>
-      <pubDate>Wed, 09 Feb 2022 15:40:07 +0800</pubDate>
-      
-      <guid>https://a199348006.github.io/my-blog/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>multer</title>
+      <title>Multer</title>
       <link>https://a199348006.github.io/my-blog/tags/multer/</link>
       <pubDate>Wed, 09 Feb 2022 15:40:07 +0800</pubDate>
       
@@ -74,7 +74,7 @@
     </item>
     
     <item>
-      <title>github</title>
+      <title>Github</title>
       <link>https://a199348006.github.io/my-blog/tags/github/</link>
       <pubDate>Sun, 30 Jan 2022 11:49:15 +0800</pubDate>
       
@@ -83,7 +83,7 @@
     </item>
     
     <item>
-      <title>hugo</title>
+      <title>Hugo</title>
       <link>https://a199348006.github.io/my-blog/tags/hugo/</link>
       <pubDate>Sun, 30 Jan 2022 11:49:15 +0800</pubDate>
       
