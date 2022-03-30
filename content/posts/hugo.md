@@ -12,7 +12,9 @@ hideSummary: false # To Hide summary being shown in list pages
 
 > 網路上已有了許多教學及流程可以參考，在實作過程中還算順利，所以這邊就只附上我個人的[參考文獻](#參考來源)，並提出些碰到的狀況。
 
-## Q: found no layout file for "HTML" for "page"
+## Accidents
+
+_**found no layout file for "HTML" for "page"**_
 
 這是在我推上github之後，想在本地端啟動server所發生的錯誤，解決方式如下：
 

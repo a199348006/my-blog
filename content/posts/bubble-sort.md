@@ -30,7 +30,7 @@ math: true
 
 ## 實際操作
 
-```Javascript
+```javascript
 function swap(arr, index1, index2) {
   const temp = arr[index1];
   arr[index1] = arr[index2];

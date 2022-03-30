@@ -37,7 +37,7 @@ math: true
 
 ### 遞迴結構實作
 
-```Javascript
+```javascript
 function merge(leftArr, rightArr) {
   let temp = [];
   let [leftIndex, rightIndex] = [0, 0];

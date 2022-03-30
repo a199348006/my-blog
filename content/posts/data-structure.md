@@ -2,7 +2,7 @@
 title: "資料結構簡介"
 date: 2022-03-16T13:44:14+08:00
 draft: false
-tags: ["Data structure"]
+tags: ["Data Structure"]
 categories: ["Undefined"]
 description: "Introduce the data structure."
 hideSummary: false # To Hide summary being shown in list pages
@@ -18,7 +18,7 @@ hideSummary: false # To Hide summary being shown in list pages
 - 佇列(Queue)
 - 樹狀結構(Tree)
 - 圖形結構(Graph)
-- 雜湊表(Hash table)
+- 雜湊表(Hash Table)
 - 堆積(Heap)
 
 ## 資料結構分類
@@ -113,7 +113,7 @@ hideSummary: false # To Hide summary being shown in list pages
 - 無向圖
 - 有向圖
 
-## 雜湊表(Hash table)
+## 雜湊表(Hash Table)
 
 雜湊表的定義與特性：
 > 雜湊表的所儲存的資料元素都有成對的鍵(Key)及值(Value)，將Key經過雜湊函數(Hash Function)後，計算出新的值並放入對應的陣列索引中。若發生雜湊碰撞(collsion)，則使用連結串列的方式儲存。此資料結構方法被廣泛運用在資料庫搜索、關鍵字搜尋、快取等。
